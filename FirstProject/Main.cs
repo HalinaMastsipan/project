@@ -23,7 +23,6 @@ namespace FirstProject
                 }
                 return value;
             }
-
             string countValue(int value)
             {
                 int result = 0;
@@ -34,7 +33,5 @@ namespace FirstProject
                 return result.ToString();
             }
         }
-
-
-    }
+    } 
 }
