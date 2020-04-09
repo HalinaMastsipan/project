@@ -1,0 +1,6 @@
+/FirstProject/FirstProject.csproj
+/FirstProject/FirstProject.sln
+*.suo
+/FirstProject/.vs
+/FirstProject/bin
+/FirstProject/obj
