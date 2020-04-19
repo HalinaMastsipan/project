@@ -1,16 +1,20 @@
-﻿using System;
+﻿using FirstProject.RandomNumbers;
+using System;
 using System.Collections.Generic;
 using System.Text;
+using TuttiFruttiProgram;
 
-namespace FirstProject
+namespace SumProgram
 {
     class Array
     {
         public static void Main (String [] args)
         {
+            new NewArrayWithRandomValues().countElementsSum();
+            TuttiFrutti tuttiFrutti = new TuttiFrutti();
+            tuttiFrutti.outputValues();
             int a = enteredValue();
             Console.WriteLine(countValue(a));
-
             int enteredValue()
             {
                 Console.WriteLine("Insert some number");
@@ -23,7 +27,6 @@ namespace FirstProject
                 }
                 return value;
             }
-
             string countValue(int value)
             {
                 int result = 0;
@@ -34,7 +37,5 @@ namespace FirstProject
                 return result.ToString();
             }
         }
-
-
-    }
+    } 
 }
