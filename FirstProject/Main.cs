@@ -1,40 +1,37 @@
-﻿using System;
+﻿using FirstProject.RandomNumbers;
+using System;
 using System.Collections.Generic;
 using System.Text;
+using TuttiFruttiProgram;
+using FirstProject.SumProgram;
+using FirstProject.DifMethods;
 
-namespace FirstProject
+namespace TheBeginning
 {
-    class Array
+    class StartingClass
     {
-        public static void Main (String [] args)
+        public static void Main(String[] args)
         {
-            int a = enteredValue();
-            Console.WriteLine(countValue(a));
+            Console.WriteLine("_________________________________Task 1_________________________________");
+            int[] numbers = NewArrayWithRandomValues.generateArray(5);
+            NewArrayWithRandomValues.printArray(numbers);
+            int sum = NewArrayWithRandomValues.calculateSum(numbers);
+            Console.WriteLine($"Sum of array elements is {sum}");
 
-            int enteredValue()
-            {
-                Console.WriteLine("Insert some number");
-                string N = Console.ReadLine();
-                int value;
-                while (!int.TryParse(N, out value) || !(value <= 100))
-                {
-                    Console.WriteLine("error");
-                    N = Console.ReadLine();
-                }
-                return value;
-            }
+            Console.WriteLine("_________________________________Task 2_________________________________");
+            TuttiFrutti.outputValues();
 
-            string countValue(int value)
-            {
-                int result = 0;
-                for (int i = 1; i <= value; i++)
-                {
-                    result = result + i;
-                }
-                return result.ToString();
-            }
+            Console.WriteLine("_________________________________Task 3_________________________________");
+            int value = SumProgram.readValue();
+            int sum1 = SumProgram.countValue(value);
+            Console.WriteLine($"The sum of numbers between {value} and 0 is {sum1}");
+
+            Console.WriteLine("_________________________________Task 4_________________________________");
+            int f1 = Arithmetical.readFirstNumber();
+            int f2 = Arithmetical.readSecondNumber();
+            Arithmetical.sumOfTheNumbers(f1, f2);
+            Arithmetical.multiplicationOfTheNumbers(f1, f2);
+            Arithmetical.divisionOfTheNumbers(f1, f2);
         }
-
-
     }
 }
