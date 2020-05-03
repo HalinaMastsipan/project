@@ -38,7 +38,6 @@ namespace TheBeginning
             int arraySize = ArrayHandler.ScanArraySize();
             int[] array = ArrayHandler.FillArray(arraySize);
             ArrayHandler.ValidateIfTheSequenseIsAscending(array);
-
         }
     }
 }
