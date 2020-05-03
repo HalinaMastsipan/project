@@ -18,14 +18,17 @@ namespace FirstProject.DifMethods
             int secondNumber = Int32.Parse(Console.ReadLine());
             return secondNumber;
         }
+
         public static void SumOfTheNumbers(int f1, int f2)
         {
             Console.WriteLine("SUM OF THE NUMBERS IS " + Convert.ToInt32(f1 + f2));
         }
+
         public static void MultiplicationOfTheNumbers(int f1, int f2)
         {
             Console.WriteLine("MULTIPLICATION OF THE NUMBERS IS " + Convert.ToInt32(f1 * f2));
         }
+
         public static void DivisionOfTheNumbers(int f1, int f2)
         {
             Console.WriteLine("DIVISION OF THE NUMBERS IS " + Convert.ToInt32(f1 * f2));
