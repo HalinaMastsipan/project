@@ -6,7 +6,7 @@ namespace FirstProject.RandomNumbers
 {
     class NewArrayWithRandomValues
     {
-        public static int[] generateArray(int size)
+        public static int[] GenerateArray(int size)
         {
             int[] numbers = new int[size];
             Random random = new Random();
@@ -17,7 +17,7 @@ namespace FirstProject.RandomNumbers
             }
             return numbers;
         }
-        public static void printArray(int[] numbers)
+        public static void PrintArray(int[] numbers)
         {
             Console.WriteLine("Your array contains numbers");
             for (int i = 0; i < numbers.Length; i++)
@@ -25,7 +25,7 @@ namespace FirstProject.RandomNumbers
                 Console.WriteLine(numbers[i]);
             }
         }
-        public static int calculateSum(int[] numbers)
+        public static int CalculateSum(int[] numbers)
         {
             int sum = 0;
             for (int i = 0; i < numbers.Length; i++)
