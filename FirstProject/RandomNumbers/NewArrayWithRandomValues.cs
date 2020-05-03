@@ -17,6 +17,7 @@ namespace FirstProject.RandomNumbers
             }
             return numbers;
         }
+
         public static void PrintArray(int[] numbers)
         {
             Console.WriteLine("Your array contains numbers");
@@ -25,6 +26,7 @@ namespace FirstProject.RandomNumbers
                 Console.WriteLine(numbers[i]);
             }
         }
+
         public static int CalculateSum(int[] numbers)
         {
             int sum = 0;

@@ -55,6 +55,5 @@ namespace FirstProject.SequenseOfNumbers
             string answer = isAscending ? " is " : " is not ";
             Console.WriteLine($"Your array {answer} ascending");
         }
-
     }
 }
